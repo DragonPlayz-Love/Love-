@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You, Yunn!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>I love you so much, Yunnn! 💖</h1>
+        <p>Will you marry me? 💍</p>
+        <button onclick="showResponse()">Yes or No?</button>
+        <div id="response" class="response"></div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="loveSong" src="music.mp3"></audio>
+
+    <script>
+        function showResponse() {
+            let response = document.getElementById('response');
+            response.innerHTML = "Yay! You said Yes! 🎉💖💍";
+            
+            // Play the music
+            let music = document.getElementById('loveSong');
+            music.play();
+        }
+    </script>
+</body>
+</html>
